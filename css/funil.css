@@ -196,6 +196,10 @@ h2 {
 }
 .lista strong { display: block; }
 .lista span { color: var(--texto-suave); font-size: 15px; }
+.lista.compacta { gap: 10px; }
+.lista.compacta li { align-items: center; }
+.lista.compacta strong { font-weight: 600; }
+.lista small { margin-left: auto; padding-left: 8px; color: #9ca3af; font-size: 13px; white-space: nowrap; }
 
 .dor { color: var(--texto-suave); font-size: 17px; }
 .dor p + p { margin-top: 12px; }
