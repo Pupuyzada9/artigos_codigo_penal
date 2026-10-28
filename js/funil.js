@@ -27,7 +27,7 @@ const CONFIG = {
     lpe: { nome: "Legislação Penal Especial Explicada", link: "#LINK-DO-PDF" },
   },
   suporte: {
-    email: "contato@seusite.com.br",
+    email: "direitodescomplica@gmail.com",
     whatsapp: "", // ex.: "5511999999999" (só números). Vazio esconde o botão.
   },
 };
