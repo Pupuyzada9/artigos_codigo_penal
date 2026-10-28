@@ -86,3 +86,15 @@
 button.bg-green-500,a.bg-green-500{animation:cpRespira 3.2s ease-in-out infinite!important;opacity:1!important}
 button.bg-green-500:hover,a.bg-green-500:hover{animation-play-state:paused!important}
 @media (prefers-reduced-motion:reduce){button.bg-green-500,a.bg-green-500,#ofertas .cp-of-pulse{animation:none!important;filter:drop-shadow(0 6px 14px rgb(34 197 94/.35))}}
+
+/* Celular: Premium antes do Básico; aviso do Básico discreto */
+@media (max-width:767px){#ofertas .cp-of-premium{order:-1;margin-bottom:.75rem}}
+#ofertas .cp-of-note{color:#6b7280!important;font-weight:600!important;font-size:.8rem!important}
+
+/* Botão fixo no rodapé do celular */
+.cp-fixo{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:.6rem 1rem calc(.6rem + env(safe-area-inset-bottom));background:rgb(255 255 255/.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid #e5e7eb;box-shadow:0 -8px 24px -12px rgb(0 0 0/.25);transform:translateY(110%);transition:transform .3s ease}
+.cp-fixo.on{transform:none}
+.cp-fixo a{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;padding:.85rem 1rem;border-radius:.9rem;background:#22c55e;color:#fff;font-weight:900;text-transform:uppercase;letter-spacing:.03em;font-size:1rem;text-decoration:none;box-shadow:0 4px 0 #16a34a}
+.cp-fixo a small{font-weight:700;text-transform:none;letter-spacing:0;opacity:.9;font-size:.8rem}
+@media (min-width:768px){.cp-fixo{display:none}}
+@media (prefers-reduced-motion:reduce){.cp-fixo{transition:none}}
