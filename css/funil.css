@@ -325,3 +325,16 @@ footer { text-align: center; font-size: 12px; color: #9ca3af; padding: 24px 16px
   font-weight: 900; font-size: 14px; display: grid; place-items: center;
 }
 .passos strong { display: block; color: var(--texto); font-size: 16px; }
+
+footer a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Página de política de privacidade */
+.legal { max-width: 720px; padding-top: 28px; }
+.legal .voltar { display: inline-block; font-size: 14px; color: var(--texto-suave); margin-bottom: 18px; }
+.legal h1 { margin-bottom: 4px; }
+.legal .atualizada { color: #9ca3af; font-size: 13px; margin-bottom: 20px; }
+.legal h2 { font-size: 18px; margin: 28px 0 8px; }
+.legal p, .legal li { color: var(--texto-suave); font-size: 15px; line-height: 1.65; }
+.legal ul { padding-left: 20px; display: grid; gap: 6px; }
+.legal strong { color: var(--texto); }
+.legal a { color: var(--azul); }
