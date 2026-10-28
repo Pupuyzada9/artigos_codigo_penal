@@ -74,8 +74,8 @@ main {
   margin-bottom: 12px;
 }
 
-.topo { text-align: center; margin: 8px 0 18px; }
-.topo .pre { color: var(--verde-escuro); font-weight: 700; margin-bottom: 8px; }
+.topo { text-align: center; margin: 14px 0 18px; }
+.topo .pre { color: var(--verde-escuro); font-size: 14px; font-weight: 700; margin-bottom: 6px; }
 h1 {
   font-size: clamp(24px, 6.4vw, 36px);
   line-height: 1.15;
@@ -84,7 +84,7 @@ h1 {
   text-wrap: balance;
 }
 h1 mark { background: none; color: var(--vermelho); }
-.topo .sub { color: var(--texto-suave); font-size: 18px; margin-top: 12px; text-wrap: pretty; }
+.topo .sub { color: var(--texto-suave); font-size: 15px; margin-top: 6px; text-wrap: balance; }
 
 h2 {
   font-size: 22px;
