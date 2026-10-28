@@ -8,45 +8,30 @@
     <link rel="stylesheet" href="css/funil.css">
     <script src="js/funil.js" defer></script>
   </head>
-  <body>
-    <div class="faixa verde">✅ Pedido concluído com sucesso</div>
-
-    <nav class="etapas" aria-label="Etapas do pedido">
-      <span class="feita">✓ Pagamento aprovado</span>
-      <span class="sep">›</span>
-      <span class="feita">✓ Oferta especial</span>
-      <span class="sep">›</span>
-      <span class="atual">● Acesso</span>
-    </nav>
+  <body class="p-ok">
+    <div class="faixa">✅ Pedido concluído com sucesso</div>
 
     <main>
       <header class="topo">
-        <h1>Obrigado! Seu acesso está liberado 🎉</h1>
-        <p class="sub">Baixe seus materiais abaixo. Também enviamos tudo para o e-mail usado na compra.</p>
+        <div class="check-grande" aria-hidden="true">✓</div>
+        <h1>Tudo certo! Bons estudos.</h1>
+        <p>Baixe seus materiais abaixo. Também enviamos tudo para o seu e-mail.</p>
       </header>
 
-      <section class="card">
+      <section class="caixa">
         <h2>Seus materiais</h2>
         <ul class="entregas" id="entregas"></ul>
-        <p id="sem-entregas" class="dor" hidden>Seus materiais foram enviados para o e-mail usado na compra. Confira também a caixa de spam e a aba Promoções.</p>
+        <p id="sem-entregas" class="msg" hidden>Seus materiais foram enviados para o e-mail da compra. Confira também o spam e a aba Promoções.</p>
         <a id="whatsapp" class="btn btn-zap" target="_blank" rel="noopener" hidden>Receber também pelo WhatsApp</a>
       </section>
 
-      <section class="card">
-        <h2>Como aproveitar melhor</h2>
-        <ul class="lista">
-          <li><div><strong>Salve os arquivos no celular</strong><span>Assim você estuda em qualquer lugar, mesmo sem internet.</span></div></li>
-          <li><div><strong>Comece pelos temas da sua prova</strong><span>Não precisa ler na ordem: vá direto ao que mais cai no seu edital.</span></div></li>
-          <li><div><strong>Revise um pouco por dia</strong><span>15 minutos diários rendem mais que uma maratona no fim de semana.</span></div></li>
-        </ul>
-      </section>
+      <div class="dicas">
+        <span>📱 Salve no celular</span>
+        <span>🎯 Comece pelo seu edital</span>
+        <span>⏱️ 15 min por dia</span>
+      </div>
 
-      <section class="card garantia">
-        <div class="icone" aria-hidden="true">✉️</div>
-        <p><strong>Não recebeu algo?</strong> Fale com a gente pelo e-mail <span data-email></span> que resolvemos rapidinho.</p>
-      </section>
+      <p class="suporte">Não recebeu algo? Escreva para <strong data-email></strong></p>
     </main>
-
-    <footer>Código Penal Explicado · Bons estudos!</footer>
   </body>
 </html>
