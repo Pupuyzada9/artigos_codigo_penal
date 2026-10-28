@@ -100,7 +100,16 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Capa do produto feita em CSS, para não depender de arte nova. */
+.foto-produto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 28px;
+  border-radius: 20px;
+  box-shadow: 0 24px 40px -16px rgb(15 23 42 / .45);
+}
+
+/* Capa do produto feita em CSS, usada enquanto a página não tem foto. */
 .capa {
   width: 190px;
   aspect-ratio: 3 / 4;
