@@ -61,7 +61,7 @@
 #ofertas .cp-of-price{border-radius:1rem;padding:1rem .5rem!important;margin-bottom:1.1rem!important;background:#f9fafb}
 #ofertas .cp-of-price-g{background:#f0fdf4!important;border:1px solid #dcfce7}
 #ofertas .cp-of-btn{border-radius:.9rem!important}
-#ofertas .cp-of-pulse{animation:cpOfPulse 2.2s ease-in-out infinite}
+#ofertas .cp-of-pulse{animation:cpRespira 3.2s ease-in-out infinite}
 @keyframes cpOfPulse{50%{transform:scale(1.025)}}
 @media (prefers-reduced-motion:reduce){#ofertas .cp-of-pulse{animation:none}}
 #ofertas .cp-of-note{font-size:.72rem!important;margin-top:.8rem!important}
@@ -80,3 +80,9 @@
 .cp-uso-card img{display:block;width:100%;height:100%;object-fit:cover}
 @media (min-width:768px){.cp-uso{padding:4.5rem 0 3rem}.cp-uso-h{font-size:2.25rem}.cp-uso-hint{display:none}.cp-uso-trilho{gap:1.25rem;padding:.5rem max(1.5rem,calc((100vw - 72rem)/2)) 2rem}.cp-uso-card{width:20rem}}
 #ofertas+.cp-dep{background:#fff}
+
+/* Botões verdes: brilho verde suave e "respiração" lenta */
+@keyframes cpRespira{0%,100%{transform:scale(1);filter:drop-shadow(0 6px 14px rgb(34 197 94/.28))}50%{transform:scale(1.02);filter:drop-shadow(0 10px 24px rgb(34 197 94/.5))}}
+button.bg-green-500,a.bg-green-500{animation:cpRespira 3.2s ease-in-out infinite!important;opacity:1!important}
+button.bg-green-500:hover,a.bg-green-500:hover{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){button.bg-green-500,a.bg-green-500,#ofertas .cp-of-pulse{animation:none!important;filter:drop-shadow(0 6px 14px rgb(34 197 94/.35))}}
