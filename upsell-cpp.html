@@ -8,44 +8,73 @@
     <link rel="stylesheet" href="css/funil.css">
     <script src="js/funil.js" defer></script>
   </head>
-  <body class="p-cpp">
-    <div class="faixa">⚠️ Não feche esta página: seu pedido ainda não terminou</div>
+  <body>
+    <div class="faixa">⚠️ NÃO FECHE ESTA PÁGINA: seu pedido ainda não foi finalizado</div>
 
-    <header class="hero">
-      <nav class="etapas" aria-label="Etapas do pedido">
-        <span class="feita">✓ Pagamento</span><span>›</span>
-        <span class="atual">● Oferta</span><span>›</span>
-        <span>Acesso</span>
-      </nav>
-      <h1>Você já entendeu os crimes. <em>Agora entenda o processo.</em></h1>
-      <p>Do inquérito à sentença, no mesmo formato simples que você acabou de comprar.</p>
-
-      <div class="jornada" aria-hidden="true">
-        <div class="livro cp">Código Penal</div>
-        <span class="seta">→</span>
-        <div class="livro cpp">Código de Processo Penal</div>
-      </div>
-    </header>
+    <nav class="etapas" aria-label="Etapas do pedido">
+      <span class="feita">✓ Pagamento aprovado</span>
+      <span class="sep">›</span>
+      <span class="atual">● Oferta especial</span>
+      <span class="sep">›</span>
+      <span>Acesso</span>
+    </nav>
 
     <main>
-      <section class="trilha-box">
-        <h2>Do crime à sentença, passo a passo</h2>
-        <ol class="trilha">
-          <li><strong>Inquérito</strong><span>Quem investiga, prazos e arquivamento.</span></li>
-          <li><strong>Prisão</strong><span>Flagrante, preventiva e temporária, sem confusão.</span></li>
-          <li><strong>Fiança</strong><span>Quem concede, quanto custa e o que é inafiançável.</span></li>
-          <li><strong>Júri</strong><span>Como funciona o julgamento dos crimes contra a vida.</span></li>
-          <li><strong>Recursos</strong><span>Como e quando recorrer da decisão.</span></li>
-        </ol>
+      <header class="topo">
+        <p class="pre">🎉 Parabéns! Seu Código Penal Explicado já é seu.</p>
+        <h1>Você já entendeu os crimes. <mark>Agora entenda como funciona o processo.</mark></h1>
+        <p class="sub">Inquérito, prisão, fiança e júri, explicados no mesmo formato simples e visual que você acabou de comprar.</p>
+      </header>
+
+      <div class="capa" aria-hidden="true">
+        <span class="capa-tag">Explicado de forma simples</span>
+        <span class="capa-titulo">Código de Processo Penal<small>Artigo por artigo</small></span>
+        <span class="capa-rodape">Atualizado com o texto oficial</span>
+      </div>
+
+      <section class="card dor">
+        <p>O Código Penal diz <strong>o que é crime</strong>. Mas é o Código de Processo Penal que diz <strong>o que acontece depois</strong>: quem investiga, quando alguém pode ser preso, quem paga fiança e como o réu é julgado.</p>
+        <p>E é justamente aí que muita gente trava: o CPP é longo, técnico e cheio de prazos. Por isso ele <strong>cai em praticamente todo concurso policial e jurídico</strong>, e é onde quem estudou direito ganha pontos.</p>
       </section>
 
-      <div class="preco-linha"><s>R$ 67</s><b>R$ 24,90</b></div>
+      <section class="card">
+        <h2>O que você vai entender</h2>
+        <ul class="lista">
+          <li><div><strong>Inquérito policial</strong><span>Quem instaura, prazos, arquivamento e o papel do delegado.</span></div></li>
+          <li><div><strong>Prisões</strong><span>Flagrante, preventiva e temporária: quando cabe cada uma e a diferença entre elas.</span></div></li>
+          <li><div><strong>Fiança e liberdade provisória</strong><span>Quem pode conceder, valores e os crimes inafiançáveis.</span></div></li>
+          <li><div><strong>Tribunal do Júri</strong><span>O passo a passo, do recebimento da denúncia até a votação dos jurados.</span></div></li>
+          <li><div><strong>Provas, nulidades e recursos</strong><span>O que vale como prova, o que anula o processo e como recorrer.</span></div></li>
+          <li><div><strong>Mesmo formato do Código Penal</strong><span>Linguagem simples, exemplos do dia a dia e destaques visuais em cada artigo.</span></div></li>
+        </ul>
+      </section>
 
-      <!-- Se a plataforma tiver upsell de 1 clique (Kiwify/Hotmart), cole o script dela no lugar deste botão. -->
-      <a class="btn btn-verde btn-pulso" data-checkout="cpp" href="#">Sim! Adicionar ao meu pedido</a>
-      <p class="garantia-linha">🔒 Pagamento único · ⚡ Acesso imediato · 🛡️ Garantia de 7 dias</p>
+      <section class="card oferta" id="oferta">
+        <span class="selo">Só nesta página</span>
+        <p class="de">De R$ 67,00</p>
+        <p class="por">por apenas</p>
+        <p class="preco">R$ 24,90</p>
+        <p class="nota">Pagamento único · acesso imediato · adicionado ao seu pedido</p>
 
-      <a class="recusar" href="downsell-cpp.html">Não, obrigado. Vou estudar o processo sozinho.</a>
+        <!-- Se a plataforma tiver upsell de 1 clique (Kiwify/Hotmart), cole o script dela no lugar deste botão. -->
+        <a class="btn btn-verde btn-pulso" data-checkout="cpp" href="#">Sim! Quero o Processo Penal Explicado</a>
+
+        <div class="seguro">
+          <span>🔒 Compra segura</span>
+          <span>⚡ Acesso imediato</span>
+          <span>🛡️ Garantia de 7 dias</span>
+        </div>
+      </section>
+
+      <section class="card garantia">
+        <div class="icone" aria-hidden="true">🛡️</div>
+        <p><strong>Garantia incondicional de 7 dias.</strong> Se não gostar, é só pedir o reembolso dentro de 7 dias e você recebe 100% do valor de volta, sem perguntas.</p>
+      </section>
+
+      <a class="btn btn-verde" data-checkout="cpp" href="#">Quero adicionar ao meu pedido</a>
+      <a class="recusar" href="downsell-cpp.html">Não, obrigado. Vou estudar o processo penal por conta própria.</a>
     </main>
+
+    <footer>Esta oferta é exclusiva para quem acabou de comprar o Código Penal Explicado.</footer>
   </body>
 </html>
