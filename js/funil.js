@@ -32,8 +32,15 @@ const CONFIG = {
   },
 };
 
-// Fotos da seção "Veja o material em uso" (mesmas da página principal), na ordem.
-const FOTOS_USO = [1, 2, 3, 4, 5, 6, 7, 8].map((n) => `img/uso/uso-${n}.jpg`);
+// Fotos da seção "Veja o material em uso": ordem diferente em cada página do funil.
+const ORDEM_USO = {
+  "upsell-cpp": [4, 8, 2, 6, 1, 7, 3, 5],
+  "downsell-cpp": [6, 3, 7, 1, 5, 2, 8, 4],
+  "upsell-legislacao": [2, 5, 8, 3, 7, 4, 1, 6],
+  obrigado: [7, 1, 4, 6, 2, 8, 5, 3],
+};
+const paginaAtual = location.pathname.split("/").pop().replace(".html", "");
+const FOTOS_USO = (ORDEM_USO[paginaAtual] || [1, 2, 3, 4, 5, 6, 7, 8]).map((n) => `img/uso/uso-${n}.jpg`);
 
 const CHAVE = "funil_compras";
 
