@@ -2,3 +2,17 @@
 
 /* Cards de benefícios compactos no celular (grade 2x2) */
 @media (max-width:767px){.cp-feat{padding-top:2.5rem!important;padding-bottom:2.5rem!important}.cp-feat h2{font-size:1.375rem!important;margin-bottom:1.25rem!important}.cp-feat-grid{grid-template-columns:1fr 1fr!important;gap:.75rem!important;margin-bottom:1.75rem!important}.cp-feat-card{padding:.875rem!important;border-radius:.875rem!important}.cp-feat-ico{width:2.25rem!important;height:2.25rem!important;margin-bottom:.5rem!important}.cp-feat-ico svg{width:1.25rem!important;height:1.25rem!important}.cp-feat-t{font-size:.8125rem!important;line-height:1.2!important;margin-bottom:.25rem!important}.cp-feat-d{font-size:.8125rem!important;line-height:1.4!important}.cp-feat-cta{font-size:1.0625rem!important;margin-bottom:1rem!important}}
+
+/* Seção "Ideal para você que deseja..." */
+.cp-ideal{position:relative;overflow:hidden;color:#fff;padding:3.5rem 1rem;background:radial-gradient(120% 70% at 50% 0%,#1e293b 0%,#0f172a 55%,#0b1120 100%)}
+.cp-ideal::before{content:"";position:absolute;inset:-40% -20% auto;height:70%;background:radial-gradient(closest-side,rgb(250 204 21/.14),transparent);pointer-events:none}
+.cp-ideal-in{position:relative;max-width:44rem;margin:0 auto;text-align:center}
+.cp-ideal-tag{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#facc15;border:1px solid rgb(250 204 21/.4);background:rgb(250 204 21/.08);padding:.3rem .8rem;border-radius:999px;margin-bottom:.9rem}
+.cp-ideal-h{font-size:1.75rem;line-height:1.15;font-weight:900;letter-spacing:-.01em;margin:0 0 1.75rem}
+.cp-ideal-h span{color:#facc15}
+.cp-ideal-list{list-style:none;margin:0;padding:0;display:grid;gap:.75rem;text-align:left}
+.cp-ideal-item{display:flex;align-items:center;gap:.9rem;padding:.9rem 1rem;border-radius:1rem;background:rgb(255 255 255/.05);border:1px solid rgb(255 255 255/.09);box-shadow:inset 0 1px 0 rgb(255 255 255/.05)}
+.cp-ideal-ico{flex:none;width:2.6rem;height:2.6rem;border-radius:.8rem;display:grid;place-items:center;font-size:1.3rem;background:linear-gradient(145deg,rgb(34 197 94/.25),rgb(34 197 94/.08));border:1px solid rgb(74 222 128/.35)}
+.cp-ideal-item p{margin:0;font-size:.98rem;line-height:1.4;color:#cbd5e1}
+.cp-ideal-item strong{color:#fff;font-weight:800}
+@media (min-width:768px){.cp-ideal{padding:5rem 1rem}.cp-ideal-h{font-size:2.25rem}.cp-ideal-list{grid-template-columns:1fr 1fr;gap:1rem}.cp-ideal-item{align-items:flex-start;padding:1.25rem}.cp-ideal-item p{font-size:1.05rem}}
