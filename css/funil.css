@@ -278,42 +278,6 @@ h2 {
 
 footer { text-align: center; font-size: 12px; color: #9ca3af; padding: 24px 16px 40px; }
 
-/* "Veja o material em uso": fotos reais, iguais às da página principal */
-.uso { text-align: center; margin: 8px 0 28px; }
-.uso-tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--vermelho); background: #fef2f2; border: 1px solid #fecaca; padding: 4px 11px; border-radius: 999px; margin-bottom: 10px; }
-.uso h2 { margin-bottom: 4px; }
-.uso-sub { color: var(--texto-suave); font-size: 15px; margin-bottom: 4px; }
-.uso-hint { color: #9ca3af; font-size: 13px; margin-bottom: 14px; }
-.uso-trilho {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding: 8px 9% 24px;
-  scroll-padding: 0 9%;
-}
-.uso-trilho::-webkit-scrollbar { display: none; }
-.uso-card {
-  flex: none;
-  width: 82%;
-  max-width: 340px;
-  aspect-ratio: 3 / 4;
-  scroll-snap-align: center;
-  border-radius: 24px;
-  overflow: hidden;
-  background: #e5e7eb;
-  box-shadow: 0 24px 40px -22px rgb(0 0 0 / .55), 0 2px 6px rgb(0 0 0 / .06);
-}
-.uso-card img { display: block; width: 100%; height: 100%; object-fit: cover; }
-@media (min-width: 768px) {
-  .uso-hint { display: none; }
-  .uso-trilho { padding: 8px max(24px, calc((100vw - 1100px) / 2)) 28px; gap: 20px; }
-  .uso-card { width: 300px; }
-}
-
 /* Passo a passo da página de obrigado */
 .passos { list-style: none; padding: 0; display: grid; gap: 14px; counter-reset: passo; }
 .passos li { position: relative; padding-left: 44px; color: var(--texto-suave); font-size: 15px; counter-increment: passo; }

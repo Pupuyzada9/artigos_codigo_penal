@@ -32,16 +32,6 @@ const CONFIG = {
   },
 };
 
-// Fotos da seção "Veja o material em uso": ordem diferente em cada página do funil.
-const ORDEM_USO = {
-  "upsell-cpp": [4, 8, 2, 6, 1, 7, 3, 5],
-  "downsell-cpp": [6, 3, 7, 1, 5, 2, 8, 4],
-  "upsell-legislacao": [2, 5, 8, 3, 7, 4, 1, 6],
-  obrigado: [7, 1, 4, 6, 2, 8, 5, 3],
-};
-const paginaAtual = location.pathname.split("/").pop().replace(".html", "");
-const FOTOS_USO = (ORDEM_USO[paginaAtual] || [1, 2, 3, 4, 5, 6, 7, 8]).map((n) => `img/uso/uso-${n}.webp`);
-
 const CHAVE = "funil_compras";
 
 function lerCompras() {
@@ -76,22 +66,6 @@ function ligarBotoes() {
     const url = CONFIG.checkout[a.dataset.checkout];
     if (url) a.href = url;
   });
-}
-
-function montarUso() {
-  const trilho = document.getElementById("uso-trilho");
-  if (!trilho) return;
-  for (const src of FOTOS_USO) {
-    const card = document.createElement("div");
-    card.className = "uso-card";
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = "Material em uso";
-    img.loading = "lazy";
-    img.decoding = "async";
-    card.appendChild(img);
-    trilho.appendChild(card);
-  }
 }
 
 function montarEntrega(compras) {
@@ -132,6 +106,5 @@ document.addEventListener("DOMContentLoaded", () => {
   const compras = registrarCompra();
   ligarBotoes();
   montarEntrega(compras);
-  montarUso();
   document.querySelectorAll("[data-email]").forEach((el) => (el.textContent = CONFIG.suporte.email));
 });
