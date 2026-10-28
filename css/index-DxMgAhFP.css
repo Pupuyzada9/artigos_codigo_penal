@@ -30,8 +30,8 @@
 .cp-rec-list li{display:flex;align-items:center;gap:.7rem;padding:.7rem .9rem;font-size:.93rem;line-height:1.35;color:#374151}
 .cp-rec-list li+li{border-top:1px solid #f3f4f6}
 .cp-rec-ck{flex:none;width:1.15rem;height:1.15rem;color:#22c55e}
-.cp-rec-mail{display:flex;align-items:center;gap:.8rem;padding:.85rem 1rem;border-radius:1rem;background:#f9fafb;border:1px solid #eef0f2}
-.cp-rec-mail-ico{flex:none;width:2.25rem;height:2.25rem;border-radius:.7rem;display:grid;place-items:center;background:#fff;border:1px solid #e5e7eb;color:#374151}
+.cp-rec-mail{display:flex;align-items:center;gap:.8rem;padding:.85rem 1rem;border-radius:1rem;background:#eff6ff;border:1px solid #bfdbfe}
+.cp-rec-mail-ico{flex:none;width:2.25rem;height:2.25rem;border-radius:.7rem;display:grid;place-items:center;background:#dbeafe;color:#2563eb}
 .cp-rec-mail-ico svg{width:1.15rem;height:1.15rem}
-.cp-rec-mail p{margin:0;font-size:.875rem;line-height:1.4;color:#4b5563}
+.cp-rec-mail p{margin:0;font-size:.875rem;font-weight:500;line-height:1.4;color:#1e40af}
 @media (min-width:768px){.cp-rec{padding:4rem 1rem}.cp-rec-card{display:grid;grid-template-columns:1fr 1.15fr}.cp-rec-img{display:flex;align-items:center;border-bottom:0;border-right:1px solid #f0f0f0;padding:2rem}.cp-rec-body{padding:2.25rem}.cp-rec-h{font-size:2rem}}
