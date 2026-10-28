@@ -15,3 +15,23 @@
 .cp-ideal-item p{margin:0;font-size:.98rem;line-height:1.4;color:#cbd5e1}
 .cp-ideal-item strong{color:#fff;font-weight:800}
 @media (min-width:768px){.cp-ideal{padding:5rem 1rem;max-width:64rem;margin:0 auto;border-radius:2rem}.cp-ideal-h{font-size:2.25rem}.cp-ideal-list{grid-template-columns:1fr 1fr;gap:1rem}.cp-ideal-item{align-items:flex-start;padding:1.25rem}.cp-ideal-item p{font-size:1.05rem}}
+
+/* Seção "Tudo o que você vai receber" em card */
+.cp-rec{background:#f3f4f6;padding:2.5rem .75rem}
+.cp-rec-card{max-width:64rem;margin:0 auto;background:#fff;border:1px solid #e5e7eb;border-radius:1.5rem;box-shadow:0 1px 2px rgb(0 0 0/.04),0 8px 24px -12px rgb(0 0 0/.08);overflow:hidden}
+.cp-rec-img{background:#fafafa;border-bottom:1px solid #f0f0f0;padding:1.25rem 1rem .75rem}
+.cp-rec-img img{display:block;width:100%;max-width:30rem;height:auto;margin:0 auto}
+.cp-rec-body{padding:1.5rem 1.25rem 1.5rem}
+.cp-rec-tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#15803d;background:#f0fdf4;border:1px solid #bbf7d0;padding:.25rem .65rem;border-radius:999px;margin-bottom:.75rem}
+.cp-rec-h{font-size:1.6rem;line-height:1.15;font-weight:800;color:#111827;letter-spacing:-.01em;margin:0 0 .5rem}
+.cp-rec-sub{color:#6b7280;font-size:.95rem;line-height:1.5;margin:0 0 1.25rem}
+.cp-rec-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9ca3af;margin:0 0 .6rem}
+.cp-rec-list{list-style:none;margin:0 0 1.25rem;padding:0;display:grid;gap:0;border:1px solid #f0f0f0;border-radius:1rem;overflow:hidden}
+.cp-rec-list li{display:flex;align-items:center;gap:.7rem;padding:.7rem .9rem;font-size:.93rem;line-height:1.35;color:#374151}
+.cp-rec-list li+li{border-top:1px solid #f3f4f6}
+.cp-rec-ck{flex:none;width:1.15rem;height:1.15rem;color:#22c55e}
+.cp-rec-mail{display:flex;align-items:center;gap:.8rem;padding:.85rem 1rem;border-radius:1rem;background:#f9fafb;border:1px solid #eef0f2}
+.cp-rec-mail-ico{flex:none;width:2.25rem;height:2.25rem;border-radius:.7rem;display:grid;place-items:center;background:#fff;border:1px solid #e5e7eb;color:#374151}
+.cp-rec-mail-ico svg{width:1.15rem;height:1.15rem}
+.cp-rec-mail p{margin:0;font-size:.875rem;line-height:1.4;color:#4b5563}
+@media (min-width:768px){.cp-rec{padding:4rem 1rem}.cp-rec-card{display:grid;grid-template-columns:1fr 1.15fr}.cp-rec-img{display:flex;align-items:center;border-bottom:0;border-right:1px solid #f0f0f0;padding:2rem}.cp-rec-body{padding:2.25rem}.cp-rec-h{font-size:2rem}}
