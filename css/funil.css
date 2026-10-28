@@ -313,3 +313,15 @@ footer { text-align: center; font-size: 12px; color: #9ca3af; padding: 24px 16px
   .uso-trilho { padding: 8px max(24px, calc((100vw - 1100px) / 2)) 28px; gap: 20px; }
   .uso-card { width: 300px; }
 }
+
+/* Passo a passo da página de obrigado */
+.passos { list-style: none; padding: 0; display: grid; gap: 14px; counter-reset: passo; }
+.passos li { position: relative; padding-left: 44px; color: var(--texto-suave); font-size: 15px; counter-increment: passo; }
+.passos li::before {
+  content: counter(passo);
+  position: absolute; left: 0; top: -1px;
+  width: 30px; height: 30px; border-radius: 999px;
+  background: var(--verde-claro); color: var(--verde-escuro);
+  font-weight: 900; font-size: 14px; display: grid; place-items: center;
+}
+.passos strong { display: block; color: var(--texto); font-size: 16px; }
