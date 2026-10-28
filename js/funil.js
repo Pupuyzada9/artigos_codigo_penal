@@ -32,6 +32,9 @@ const CONFIG = {
   },
 };
 
+// Fotos da seção "Veja o material em uso" (mesmas da página principal), na ordem.
+const FOTOS_USO = [1, 2, 3, 4, 5, 6, 7, 8].map((n) => `img/uso/uso-${n}.jpg`);
+
 const CHAVE = "funil_compras";
 
 function lerCompras() {
@@ -66,6 +69,22 @@ function ligarBotoes() {
     const url = CONFIG.checkout[a.dataset.checkout];
     if (url) a.href = url;
   });
+}
+
+function montarUso() {
+  const trilho = document.getElementById("uso-trilho");
+  if (!trilho) return;
+  for (const src of FOTOS_USO) {
+    const card = document.createElement("div");
+    card.className = "uso-card";
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = "Material em uso";
+    img.loading = "lazy";
+    img.decoding = "async";
+    card.appendChild(img);
+    trilho.appendChild(card);
+  }
 }
 
 function montarEntrega(compras) {
@@ -106,5 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const compras = registrarCompra();
   ligarBotoes();
   montarEntrega(compras);
+  montarUso();
   document.querySelectorAll("[data-email]").forEach((el) => (el.textContent = CONFIG.suporte.email));
 });
