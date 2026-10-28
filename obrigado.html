@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Seu acesso está liberado</title>
+    <link rel="stylesheet" href="css/funil.css">
+    <script src="js/funil.js" defer></script>
+  </head>
+  <body>
+    <div class="faixa verde">✅ Pedido concluído com sucesso</div>
+
+    <nav class="etapas" aria-label="Etapas do pedido">
+      <span class="feita">✓ Pagamento aprovado</span>
+      <span class="sep">›</span>
+      <span class="feita">✓ Oferta especial</span>
+      <span class="sep">›</span>
+      <span class="atual">● Acesso</span>
+    </nav>
+
+    <main>
+      <header class="topo">
+        <h1>Obrigado! Seu acesso está liberado 🎉</h1>
+        <p class="sub">Baixe seus materiais abaixo. Também enviamos tudo para o e-mail usado na compra.</p>
+      </header>
+
+      <section class="card">
+        <h2>Seus materiais</h2>
+        <ul class="entregas" id="entregas"></ul>
+        <p id="sem-entregas" class="dor" hidden>Seus materiais foram enviados para o e-mail usado na compra. Confira também a caixa de spam e a aba Promoções.</p>
+        <a id="whatsapp" class="btn btn-zap" target="_blank" rel="noopener" hidden>Receber também pelo WhatsApp</a>
+      </section>
+
+      <section class="card">
+        <h2>Como aproveitar melhor</h2>
+        <ul class="lista">
+          <li><div><strong>Salve os arquivos no celular</strong><span>Assim você estuda em qualquer lugar, mesmo sem internet.</span></div></li>
+          <li><div><strong>Comece pelos temas da sua prova</strong><span>Não precisa ler na ordem: vá direto ao que mais cai no seu edital.</span></div></li>
+          <li><div><strong>Revise um pouco por dia</strong><span>15 minutos diários rendem mais que uma maratona no fim de semana.</span></div></li>
+        </ul>
+      </section>
+
+      <section class="card garantia">
+        <div class="icone" aria-hidden="true">✉️</div>
+        <p><strong>Não recebeu algo?</strong> Fale com a gente pelo e-mail <span data-email></span> que resolvemos rapidinho.</p>
+      </section>
+    </main>
+
+    <footer>Código Penal Explicado · Bons estudos!</footer>
+  </body>
+</html>
