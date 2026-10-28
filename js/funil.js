@@ -15,9 +15,9 @@
  */
 const CONFIG = {
   checkout: {
-    cpp: "#COLE-AQUI-O-CHECKOUT-DO-CPP",
-    "cpp-top100": "#COLE-AQUI-O-CHECKOUT-DO-CPP-TOP-100",
-    lpe: "#COLE-AQUI-O-CHECKOUT-DA-LEGISLACAO-ESPECIAL",
+    cpp: "https://pay.wiapy.com/wfkR4BzRhOV6",
+    "cpp-top100": "https://pay.wiapy.com/4sNdAIFP1omU",
+    lpe: "https://pay.wiapy.com/qgPqG5tfaXoE",
   },
   entrega: {
     cp: { nome: "Código Penal Explicado", link: "#LINK-DO-PDF" },
