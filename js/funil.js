@@ -40,7 +40,7 @@ const ORDEM_USO = {
   obrigado: [7, 1, 4, 6, 2, 8, 5, 3],
 };
 const paginaAtual = location.pathname.split("/").pop().replace(".html", "");
-const FOTOS_USO = (ORDEM_USO[paginaAtual] || [1, 2, 3, 4, 5, 6, 7, 8]).map((n) => `img/uso/uso-${n}.jpg`);
+const FOTOS_USO = (ORDEM_USO[paginaAtual] || [1, 2, 3, 4, 5, 6, 7, 8]).map((n) => `img/uso/uso-${n}.webp`);
 
 const CHAVE = "funil_compras";
 
