@@ -138,6 +138,7 @@ h2 {
   gap: 16px;
   width: max-content;
   animation: rolar 30s linear infinite;
+  will-change: transform;
 }
 .carrossel-trilho img {
   width: 240px;
