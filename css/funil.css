@@ -312,3 +312,18 @@ footer a { color: inherit; text-decoration: underline; text-underline-offset: 3p
 .legal ul { padding-left: 20px; display: grid; gap: 6px; }
 .legal strong { color: var(--texto); }
 .legal a { color: var(--azul); }
+
+/* Card de oferta no mesmo estilo do Premium da página principal */
+.oferta { background: #fff; border: 2px solid var(--verde); box-shadow: 0 0 0 6px rgb(34 197 94 / .12), 0 24px 48px -24px rgb(15 23 42 / .35); }
+.oferta .pos { text-align: center; }
+.oferta .pag { display: flex; justify-content: center; gap: 20px; margin: 16px 0 22px; font-size: 14px; color: var(--texto-suave); }
+.oferta .pag span { display: inline-flex; align-items: center; gap: 6px; }
+.oferta .pag i { display: inline-grid; width: 18px; height: 18px; color: #6b7280; }
+.oferta .pag i.raio { color: #f59e0b; }
+.oferta .pag svg { width: 100%; height: 100%; }
+.selos3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 18px; }
+.selos3 > div { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 13px; color: var(--texto-suave); line-height: 1.2; }
+.selos3 strong { font-size: 12px; font-weight: 800; letter-spacing: .04em; color: var(--texto); }
+.selos3 .ico { width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; background: var(--verde-claro); color: var(--verde-escuro); margin-bottom: 6px; }
+.selos3 .ico svg { width: 18px; height: 18px; }
+.oferta .pos-txt { font-size: 13px; line-height: 1.5; color: #6b7280; }
