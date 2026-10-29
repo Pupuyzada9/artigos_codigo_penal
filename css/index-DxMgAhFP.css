@@ -196,3 +196,8 @@ h1.font-extrabold{letter-spacing:-.02em!important;text-wrap:balance}
 .cp-prova-txt{display:flex;flex-direction:column;align-items:flex-start;text-align:left;line-height:1.25}
 .cp-prova-est{color:#f59e0b;font-size:.95rem;letter-spacing:.05em}
 .cp-prova-txt span:last-child{white-space:nowrap;font-size:.85rem;font-weight:600;color:#374151}
+
+/* Faixa do topo com a data de hoje */
+.cp-faixa{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.6rem 1rem;background:#0b1b33;color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap}
+.cp-faixa svg{flex:none;width:.95rem;height:.95rem;color:#fb923c}
+@media (min-width:768px){.cp-faixa{font-size:.85rem}}
