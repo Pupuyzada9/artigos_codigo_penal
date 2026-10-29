@@ -270,3 +270,13 @@ button.bg-green-500,a.bg-green-500,.cp-final-btn{font-size:1.1rem!important;padd
 .cp-rod-mail{display:inline-block;margin:1.5rem 0 1.25rem;font-size:.95rem;color:#fff!important}
 .cp-rod-links{display:flex;justify-content:center;gap:1rem}
 @media (min-width:768px){.cp-fim{padding:5rem 1rem 3rem}.cp-fim-h{font-size:2rem}.cp-rod{font-size:.85rem}}
+
+/* "Para quem é" em versão clara: card branco, sem roubar a cena */
+section.cp-ideal{background:#fff;color:#111827;border:1px solid #e5edf5;box-shadow:0 1px 2px rgb(15 23 42/.04),0 12px 32px -18px rgb(15 23 42/.25)}
+.cp-ideal .cp-ideal-tag{color:#15803d;border-color:#bbf7d0;background:#f0fdf4}
+.cp-ideal .cp-ideal-h{color:#111827}
+.cp-ideal .cp-ideal-h span{color:#16a34a}
+.cp-ideal .cp-ideal-item{background:#f6f9fc;border:1px solid #e8eef5;box-shadow:none}
+.cp-ideal .cp-ideal-ico{color:#16a34a;background:#dcfce7;border-color:#bbf7d0}
+.cp-ideal .cp-ideal-item p{color:#4b5563}
+.cp-ideal .cp-ideal-item strong{color:#111827}
