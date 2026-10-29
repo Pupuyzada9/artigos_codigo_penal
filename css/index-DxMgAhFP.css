@@ -187,3 +187,12 @@ h1.font-extrabold{letter-spacing:-.02em!important;text-wrap:balance}
 .cp-pg-pausa{padding:0 1.4rem;font-size:.9rem;min-width:7.5rem}
 .cp-pg-ctrl button:active{transform:scale(.96)}
 @media (min-width:768px){.cp-pg-h{font-size:2rem}.cp-pg-item{width:18rem}.cp-pg-trilho{gap:1.5rem}}
+
+/* Hero: rostinhos de quem estuda com o material */
+.cp-prova{display:flex;align-items:center;justify-content:center;gap:.75rem;margin:1.5rem auto 0}
+.cp-prova-rostos{display:flex}
+.cp-prova-rostos img{width:2.75rem;height:2.75rem;border-radius:999px;object-fit:cover;border:3px solid #fff;box-shadow:0 2px 6px rgb(0 0 0/.15);background:#e5e7eb}
+.cp-prova-rostos img+img{margin-left:-.7rem}
+.cp-prova-txt{display:flex;flex-direction:column;align-items:flex-start;text-align:left;line-height:1.25}
+.cp-prova-est{color:#f59e0b;font-size:.95rem;letter-spacing:.05em}
+.cp-prova-txt span:last-child{white-space:nowrap;font-size:.85rem;font-weight:600;color:#374151}
