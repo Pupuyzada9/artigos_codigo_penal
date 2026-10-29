@@ -101,7 +101,7 @@ button.bg-green-500:hover,a.bg-green-500:hover{animation-play-state:paused!impor
 
 /* Foto em "Tudo o que você vai receber" */
 .cp-rec-foto{padding:0!important;background:#111827!important}
-.cp-rec-foto img{max-width:none!important;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}
+.cp-rec-foto img{max-width:none!important;width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
 @media (min-width:768px){.cp-rec-foto{padding:0!important}}
 
 /* Rodapé */
