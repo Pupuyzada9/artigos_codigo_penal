@@ -110,8 +110,9 @@ button.bg-green-500:hover,a.bg-green-500:hover{animation-play-state:paused!impor
 .cp-rod-links a:hover{color:#fff}
 .cp-rod-aviso{margin:.25rem 0 0;font-size:.75rem;color:#6b7280}
 
-/* Título principal mais encorpado (mesmas quebras de linha) */
-h1.font-extrabold{font-weight:900!important;letter-spacing:-.035em!important}
+/* Título principal: linhas equilibradas, menor no celular */
+h1.font-extrabold{letter-spacing:-.02em!important;text-wrap:balance}
+@media (max-width:767px){h1.font-extrabold{font-size:1.625rem!important;line-height:1.18!important;padding:0 .5rem}}
 
 /* Chamada final */
 .cp-final{background:#f3f4f6;padding:2.5rem .75rem 3rem}
