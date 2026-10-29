@@ -102,9 +102,69 @@ function montarEntrega(compras) {
   }
 }
 
+// Carrossel de páginas: anda devagar sozinho, com setas e botão de pausar.
+// O trilho tem as páginas duplicadas; ao passar da metade, volta meia volta sem pulo.
+function montarCarrosseis() {
+  document.querySelectorAll(".carrossel").forEach((caixa) => {
+    const trilho = caixa.querySelector(".carrossel-trilho");
+    if (!trilho) return;
+    const imgs = trilho.querySelectorAll("img");
+    // Distância entre a 1ª página e a 1ª da cópia: é o tamanho exato de uma volta.
+    const volta = () => imgs[imgs.length / 2].offsetLeft - imgs[0].offsetLeft;
+    let pausado = false;
+    let esperaAte = 0;
+    const espera = (ms) => (esperaAte = performance.now() + ms);
+
+    const ctrl = document.createElement("div");
+    ctrl.className = "carrossel-ctrl";
+    ctrl.innerHTML = `
+      <button type="button" class="seta" aria-label="Página anterior">←</button>
+      <button type="button" class="pausa">Pausar</button>
+      <button type="button" class="seta" aria-label="Próxima página">→</button>`;
+    caixa.after(ctrl);
+
+    const [anterior, pausa, proxima] = ctrl.querySelectorAll("button");
+    const anda = (direcao) => {
+      const img = trilho.querySelector("img");
+      const passo = img ? img.offsetWidth + parseFloat(getComputedStyle(trilho).columnGap || 16) : 256;
+      if (direcao < 0 && trilho.scrollLeft < passo) trilho.scrollLeft += volta();
+      espera(1800);
+      trilho.scrollBy({ left: direcao * passo, behavior: "smooth" });
+    };
+    anterior.addEventListener("click", () => anda(-1));
+    proxima.addEventListener("click", () => anda(1));
+    pausa.addEventListener("click", () => {
+      pausado = !pausado;
+      pausa.textContent = pausado ? "Continuar" : "Pausar";
+    });
+    trilho.addEventListener("touchstart", () => espera(60000), { passive: true });
+    trilho.addEventListener("touchend", () => espera(2500), { passive: true });
+    trilho.addEventListener("wheel", () => espera(2500), { passive: true });
+
+    let ultimo = performance.now();
+    let sobra = 0;
+    const tick = (agora) => {
+      const dt = Math.min(agora - ultimo, 100);
+      ultimo = agora;
+      if (!pausado && agora > esperaAte) {
+        sobra += dt * 0.032; // ~32 px por segundo
+        const px = Math.floor(sobra);
+        if (px) {
+          trilho.scrollLeft += px;
+          sobra -= px;
+        }
+        if (trilho.scrollLeft >= volta()) trilho.scrollLeft -= volta();
+      }
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const compras = registrarCompra();
   ligarBotoes();
+  montarCarrosseis();
   montarEntrega(compras);
   document.querySelectorAll("[data-email]").forEach((el) => (el.textContent = CONFIG.suporte.email));
 });

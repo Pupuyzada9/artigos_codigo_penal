@@ -111,35 +111,25 @@ h2 {
   box-shadow: 0 24px 40px -16px rgb(15 23 42 / .45);
 }
 
-/* Carrossel de páginas do material, no mesmo estilo do site principal. */
+/* Carrossel de páginas do material: anda devagar sozinho, com setas e pausa (controle em funil.js). */
 .vitrine { margin: 8px 0 28px; }
-.vitrine h2 { text-align: center; }
+.vitrine h2 { text-align: center; text-wrap: balance; margin-bottom: 4px; }
+.vitrine-sub { text-align: center; color: var(--texto-suave); font-size: 14px; margin: 0; }
 .carrossel {
   position: relative;
-  overflow: hidden;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  padding: 12px 0 24px;
+  padding: 12px 0 8px;
 }
-.carrossel::before,
-.carrossel::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 32px;
-  z-index: 1;
-  pointer-events: none;
-}
-.carrossel::before { left: 0; background: linear-gradient(to right, var(--fundo), transparent); }
-.carrossel::after { right: 0; background: linear-gradient(to left, var(--fundo), transparent); }
 .carrossel-trilho {
   display: flex;
   gap: 16px;
-  width: max-content;
-  animation: rolar 30s linear infinite;
-  will-change: transform;
+  overflow-x: auto;
+  padding: 4px 16px 16px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
+.carrossel-trilho::-webkit-scrollbar { display: none; }
 .carrossel-trilho img {
   width: 240px;
   height: auto;
@@ -147,16 +137,28 @@ h2 {
   border-radius: 12px;
   border: 1px solid var(--borda);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+  user-select: none;
 }
-/* Metade do trilho + metade de um espaço, para o loop não dar pulo. */
-@keyframes rolar { to { transform: translateX(calc(-50% - 8px)); } }
+.carrossel-ctrl { display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 4px; }
+.carrossel-ctrl button {
+  height: 44px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--borda);
+  box-shadow: 0 2px 8px -2px rgb(0 0 0 / .12);
+  color: #111827;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.carrossel-ctrl .seta { width: 44px; font-size: 18px; }
+.carrossel-ctrl .pausa { padding: 0 22px; font-size: 14px; min-width: 120px; }
+.carrossel-ctrl button:active { transform: scale(.96); }
 @media (min-width: 768px) {
-  .carrossel::before, .carrossel::after { width: 80px; }
   .carrossel-trilho { gap: 32px; }
   .carrossel-trilho img { width: 288px; }
-  @keyframes rolar { to { transform: translateX(calc(-50% - 16px)); } }
 }
-@media (prefers-reduced-motion: reduce) { .carrossel-trilho { animation-duration: 120s; } }
+
 
 /* Capa do produto feita em CSS, usada enquanto a página não tem foto. */
 .capa {
