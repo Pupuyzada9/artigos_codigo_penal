@@ -127,3 +127,37 @@ h1.font-extrabold{letter-spacing:-.02em!important;text-wrap:balance}
 .cp-final-btn{display:block;padding:1.1rem 1rem;font-size:1.15rem;box-shadow:0 6px 0 #15803d}
 .cp-final-seg{display:flex;align-items:center;justify-content:center;gap:.4rem;margin:1rem 0 0;font-size:.8rem;color:#9ca3af}
 @media (min-width:768px){.cp-final{padding:4rem 1rem 5rem}.cp-final-card{padding:2.5rem 2.5rem 2rem}.cp-final-h{font-size:2.1rem}.cp-final-btn{font-size:1.35rem}}
+
+/* Comparação lei seca × explicado */
+.cp-comp{padding:3rem 1rem 3.5rem;background:#fff}
+.cp-comp-in{max-width:30rem;margin:0 auto;text-align:center}
+.cp-comp-tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#b91c1c;background:#fef2f2;border:1px solid #fecaca;padding:.3rem .75rem;border-radius:999px;margin-bottom:.75rem}
+.cp-comp-h{font-size:1.5rem;line-height:1.2;font-weight:800;letter-spacing:-.02em;color:#111827;margin:0 0 .5rem}
+.cp-comp-sub{font-size:.95rem;line-height:1.5;color:#6b7280;margin:0 0 1.5rem}
+.cp-comp-box{position:relative;max-width:22rem;margin:0 auto;aspect-ratio:640/904;border-radius:1rem;overflow:hidden;box-shadow:0 1px 2px rgb(0 0 0/.05),0 16px 32px -16px rgb(0 0 0/.3);border:1px solid #e5e7eb;user-select:none;-webkit-user-select:none;background:#fff;touch-action:pan-y;cursor:ew-resize}
+.cp-comp-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.cp-comp-lei{position:absolute;inset:0;background:#fdfcf8;clip-path:inset(0 calc(100% - var(--x)) 0 0)}
+.cp-comp-pag{padding:2.6rem 1.1rem 1rem;text-align:justify;font-family:Georgia,"Times New Roman",serif;color:#374151;font-size:.8rem;line-height:1.6}
+.cp-comp-pag p{margin:0 0 .7rem}
+.cp-comp-pag b{color:#111827}
+.cp-comp-cap{text-align:center;font-weight:700;font-size:.85rem;color:#111827}
+.cp-comp-rot{position:absolute;top:.6rem;z-index:2;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .55rem;border-radius:999px;pointer-events:none}
+.cp-comp-rot-e{left:.6rem;color:#4b5563;background:#f3f4f6;border:1px solid #e5e7eb}
+.cp-comp-rot-d{right:.6rem;color:#fff;background:#16a34a}
+.cp-comp-linha{position:absolute;top:0;bottom:0;left:var(--x);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgb(0 0 0/.12),0 0 12px rgb(0 0 0/.25);z-index:2;pointer-events:none}
+.cp-comp-pino{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:2.6rem;height:2.6rem;border-radius:999px;background:#fff;color:#111827;font-weight:900;font-size:1rem;letter-spacing:-.1em;display:grid;place-items:center;box-shadow:0 4px 14px rgb(0 0 0/.3)}
+
+
+.cp-comp-nota{font-size:.875rem;line-height:1.5;color:#4b5563;margin:1.25rem auto 0;max-width:22rem}
+@media (min-width:768px){.cp-comp{padding:5rem 1rem}.cp-comp-h{font-size:2rem}.cp-comp-box{max-width:26rem}.cp-comp-pag{font-size:.92rem;padding:3rem 1.4rem 1rem}}
+
+/* Como funciona depois do pagamento */
+.cp-como{background:#fff;padding:2.75rem 1rem}
+.cp-como-in{max-width:40rem;margin:0 auto}
+.cp-como-h{text-align:center;font-size:1.375rem;line-height:1.2;font-weight:800;letter-spacing:-.02em;color:#111827;margin:0 0 1.5rem}
+.cp-como-list{list-style:none;margin:0;padding:0;display:grid;gap:.75rem}
+.cp-como-list li{display:flex;align-items:center;gap:.9rem;padding:.9rem 1rem;border:1px solid #e5e7eb;border-radius:1rem;background:#f9fafb}
+.cp-como-n{flex:none;width:2.25rem;height:2.25rem;border-radius:999px;display:grid;place-items:center;font-weight:900;color:#fff;background:#16a34a}
+.cp-como-list strong{display:block;font-size:.98rem;color:#111827}
+.cp-como-list span:not(.cp-como-n){display:block;font-size:.875rem;line-height:1.4;color:#6b7280}
+@media (min-width:768px){.cp-como-list{grid-template-columns:repeat(3,1fr)}.cp-como-list li{flex-direction:column;text-align:center;padding:1.25rem}.cp-como-h{font-size:1.75rem}}
