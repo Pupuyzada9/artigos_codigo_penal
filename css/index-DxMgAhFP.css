@@ -210,3 +210,9 @@ h1.font-extrabold{letter-spacing:-.02em!important;text-wrap:balance}
 .cp-comp-cap{text-indent:0!important;margin:.55rem 0 .25rem!important;font-size:.56rem!important;font-weight:700;text-align:center;color:#16140f}
 .cp-comp-topo{text-indent:0!important;text-align:center;font-size:.46rem;letter-spacing:.14em;text-transform:uppercase;color:#6b6252;border-bottom:.5px solid rgb(60 50 30/.35);padding-bottom:.25rem;margin:0 0 .3rem!important}
 @media (min-width:768px){.cp-comp-pag{font-size:.6rem;padding:2.6rem 1.1rem .9rem}.cp-comp-cap{font-size:.66rem!important}}
+
+/* Ofertas: chamada forte acima dos cards */
+.cp-of-topo{text-align:center;margin:0 auto 2.75rem;max-width:40rem}
+.cp-of-tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#4ade80;border:1px solid rgb(74 222 128/.35);background:rgb(34 197 94/.1);padding:.3rem .8rem;border-radius:999px;margin-bottom:.9rem}
+.cp-of-h2{margin:0;color:#fff;font-size:1.6rem;line-height:1.18;font-weight:900;letter-spacing:-.02em;text-wrap:balance}
+@media (min-width:768px){.cp-of-topo{margin-bottom:3rem}.cp-of-h2{font-size:2.4rem}}
