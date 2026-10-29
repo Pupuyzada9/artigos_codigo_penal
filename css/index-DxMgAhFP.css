@@ -172,3 +172,18 @@ h1.font-extrabold{letter-spacing:-.02em!important;text-wrap:balance}
 .cp-hero-list p{margin:0;font-size:.98rem;line-height:1.4;color:#111827;font-weight:500}
 .cp-hero-list strong{font-weight:800}
 @media (min-width:768px){.cp-hero-list{max-width:34rem}.cp-hero-list p{font-size:1.05rem}}
+
+/* Carrossel de páginas: lento, com setas e pausa */
+.cp-pg-h{font-size:1.5rem;line-height:1.2;font-weight:800;letter-spacing:-.02em;color:#111827;margin:0 0 .4rem;text-wrap:balance}
+.cp-pg-sub{font-size:.95rem;color:#6b7280;margin:0}
+.cp-pg{background:#f9fafb;padding:1.75rem 0 1.5rem}
+.cp-pg-trilho{display:flex;gap:1rem;overflow-x:auto;padding:.25rem 1rem 1rem;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.cp-pg-trilho::-webkit-scrollbar{display:none}
+.cp-pg-item{flex:none;width:15rem;border-radius:.875rem;overflow:hidden;background:#fff;border:1px solid #e5e7eb;box-shadow:0 1px 2px rgb(0 0 0/.05),0 10px 24px -14px rgb(0 0 0/.3)}
+.cp-pg-item img{display:block;width:100%;height:auto;aspect-ratio:640/904;object-fit:cover;user-select:none}
+.cp-pg-ctrl{display:flex;justify-content:center;align-items:center;gap:.75rem;margin-top:.75rem}
+.cp-pg-ctrl button{height:2.75rem;border-radius:999px;background:#fff;border:1px solid #e5e7eb;box-shadow:0 2px 8px -2px rgb(0 0 0/.12);color:#111827;font-weight:700;cursor:pointer}
+.cp-pg-seta{width:2.75rem;font-size:1.15rem}
+.cp-pg-pausa{padding:0 1.4rem;font-size:.9rem;min-width:7.5rem}
+.cp-pg-ctrl button:active{transform:scale(.96)}
+@media (min-width:768px){.cp-pg-h{font-size:2rem}.cp-pg-item{width:18rem}.cp-pg-trilho{gap:1.5rem}}
