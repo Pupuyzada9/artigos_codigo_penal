@@ -109,3 +109,6 @@ button.bg-green-500:hover,a.bg-green-500:hover{animation-play-state:paused!impor
 .cp-rod-links a{color:#d1d5db;text-decoration:underline;text-underline-offset:3px}
 .cp-rod-links a:hover{color:#fff}
 .cp-rod-aviso{margin:.25rem 0 0;font-size:.75rem;color:#6b7280}
+
+/* Título principal mais encorpado (mesmas quebras de linha) */
+h1.font-extrabold{font-weight:900!important;letter-spacing:-.035em!important}
