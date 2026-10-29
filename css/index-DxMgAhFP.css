@@ -255,3 +255,18 @@ button.bg-green-500,a.bg-green-500,.cp-final-btn{font-size:1.1rem!important;padd
 @media (min-width:768px){button.bg-green-500,a.bg-green-500,.cp-final-btn{font-size:1.3rem!important;padding:1.25rem 2.5rem!important}}
 #ofertas .cp-of-btn{font-size:1rem!important;padding:1.1rem 1.25rem!important}
 .fixed.inset-0 button.bg-green-500{font-size:.92rem!important;letter-spacing:0!important;padding:.95rem .8rem!important;gap:.45rem}
+
+/* ===== Chamada final + rodapé num bloco escuro só ===== */
+.cp-fim{background:#0b1b33!important;padding:3.5rem 1.25rem 2.5rem;text-align:center;color:#fff}
+.cp-fim-in{max-width:40rem;margin:0 auto}
+.cp-fim-tag{margin:0 0 .9rem;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#e0a526}
+.cp-fim-h{margin:0 0 1.75rem;font-family:"Poppins",Inter,sans-serif;font-size:1.45rem;line-height:1.3;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+.cp-fim-h span{display:block;color:#e0a526}
+.cp-fim-btn{width:100%;max-width:26rem;margin:0 auto}
+.cp-fim-seg{margin:1rem 0 0;font-size:.82rem;color:#a8b3c4}
+.cp-rod{background:#0b1b33;color:#8b97a8;text-align:center;font-size:.78rem;line-height:1.6;padding:1rem 1.25rem 2.5rem;border-top:1px solid rgb(255 255 255/.06)}
+.cp-rod p{max-width:44rem;margin:0 auto 1rem}
+.cp-rod a{color:#c9d2de;text-decoration:underline;text-underline-offset:2px}
+.cp-rod-mail{display:inline-block;margin:1.5rem 0 1.25rem;font-size:.95rem;color:#fff!important}
+.cp-rod-links{display:flex;justify-content:center;gap:1rem}
+@media (min-width:768px){.cp-fim{padding:5rem 1rem 3rem}.cp-fim-h{font-size:2rem}.cp-rod{font-size:.85rem}}
