@@ -307,3 +307,91 @@ section.cp-ideal{background:#fff;color:#111827;border:1px solid #e5edf5;box-shad
 /* Básico (R$ 10) primeiro, igual ao preço dos anúncios; Premium logo abaixo */
 #ofertas .cp-of-premium{order:1!important}
 #ofertas .cp-of-basic{order:0!important}
+
+/* O que vem no Pacote Premium: card do produto + bônus */
+.cp-pk{background:linear-gradient(180deg,#eff6ff 0%,#f8fafc 100%);padding:3rem 1rem;text-align:center}
+.cp-pk-tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#15803d;background:#f0fdf4;border:1px solid #bbf7d0;padding:.25rem .7rem;border-radius:999px;margin-bottom:.7rem}
+.cp-pk-h{font-size:1.75rem;line-height:1.15;font-weight:800;color:#111827;margin:0 0 .4rem;letter-spacing:-.01em}
+.cp-pk-sub{font-size:1rem;color:#4b5563;max-width:34rem;margin:0 auto 2rem;line-height:1.5}
+.cp-pk-grid{display:grid;gap:1.1rem;max-width:64rem;margin:0 auto;text-align:left}
+.cp-pk-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:1.25rem;overflow:hidden;box-shadow:0 1px 2px rgb(0 0 0/.04),0 10px 28px -14px rgb(15 23 42/.18);transition:transform .2s,box-shadow .2s}
+.cp-pk-card:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgb(0 0 0/.05),0 16px 32px -14px rgb(15 23 42/.25)}
+.cp-pk-main{border:2px solid #16a34a;box-shadow:0 0 0 4px #dcfce7,0 14px 32px -14px rgb(22 163 74/.4)}
+.cp-pk-foto{position:relative;aspect-ratio:2/1;background:#f1f5f9;border-bottom:1px solid #e5e7eb}
+.cp-pk-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.cp-pk-selo{position:absolute;top:.75rem;right:.75rem;width:3.4rem;height:3.4rem;border-radius:999px;background:#dc2626;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;box-shadow:0 4px 12px rgb(220 38 38/.4);outline:1.5px dashed rgb(255 255 255/.75);outline-offset:-5px}
+.cp-pk-selo small{font-size:.48rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
+.cp-pk-selo b{font-family:Poppins,sans-serif;font-size:1.15rem;font-weight:800;margin-top:.1rem}
+.cp-pk-main .cp-pk-selo{background:#16a34a;box-shadow:0 4px 12px rgb(22 163 74/.4)}
+.cp-pk-body{padding:1rem 1.15rem 1.25rem}
+.cp-pk-kick{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#dc2626;margin-bottom:.35rem}
+.cp-pk-main .cp-pk-kick{color:#15803d}
+.cp-pk-kick em{font-style:normal;letter-spacing:.06em;color:#15803d;background:#f0fdf4;border:1px solid #bbf7d0;padding:.1rem .45rem;border-radius:999px;font-size:.62rem}
+.cp-pk-tit{font-size:1.15rem;line-height:1.25;font-weight:800;color:#111827;margin:0 0 .35rem}
+.cp-pk-txt{font-size:.92rem;line-height:1.55;color:#4b5563;margin:0}
+@media (min-width:768px){
+.cp-pk{padding:4.5rem 1.5rem}
+.cp-pk-h{font-size:2.25rem}
+.cp-pk-grid{grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.cp-pk-main{grid-column:1/-1;display:grid;grid-template-columns:1.3fr 1fr;align-items:center}
+.cp-pk-main .cp-pk-foto{border-bottom:0;border-right:1px solid #e5e7eb;height:100%}
+.cp-pk-main .cp-pk-body{padding:1.75rem}
+.cp-pk-main .cp-pk-tit{font-size:1.6rem}
+}
+@media (min-width:1024px){.cp-pk-grid{grid-template-columns:repeat(3,1fr)}}
+.cp-pk-main .cp-pk-selo small{font-size:.42rem;letter-spacing:.06em}
+
+/* Oferta única R$ 29,90 (estilo card compacto) */
+.cp-ofx{background:linear-gradient(180deg,#eff6ff 0%,#f8fafc 100%);padding:3rem 1rem}
+.cp-ofx-card{position:relative;max-width:24rem;margin:0 auto;background:#fff;border:2px solid #16a34a;border-radius:1.5rem;padding:2rem 1.4rem 1.4rem;text-align:center;box-shadow:0 0 0 5px rgb(22 163 74/.1),0 22px 44px -22px rgb(15 23 42/.35)}
+.cp-ofx-tag{position:absolute;top:-.85rem;left:50%;transform:translateX(-50%);white-space:nowrap;background:linear-gradient(180deg,#ef4444,#b91c1c);color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.35rem .95rem;border-radius:999px;box-shadow:0 4px 10px -2px rgb(220 38 38/.5)}
+.cp-ofx-h{font-size:1.75rem;line-height:1.15;font-weight:900;color:#111827;margin:.25rem 0 .4rem;letter-spacing:-.01em}
+.cp-ofx-sub{font-size:.95rem;color:#6b7280;line-height:1.45;margin:0 0 1.25rem}
+.cp-ofx-list{list-style:none;padding:0;margin:0;text-align:left;display:grid;gap:.7rem}
+.cp-ofx-list li{display:flex;align-items:flex-start;gap:.65rem;font-size:.95rem;line-height:1.4;color:#1f2937}
+.cp-ofx-ico{flex:none;width:1.35rem;height:1.35rem;border-radius:999px;background:#16a34a;color:#fff;display:grid;place-items:center;margin-top:.05rem}
+.cp-ofx-ico svg{width:.8rem;height:.8rem}
+.cp-ofx-gift{background:#16a34a;color:#fff}
+.cp-ofx-gift svg{width:.85rem;height:.85rem}
+.cp-ofx-hr{border:0;border-top:1px solid #e5e7eb;margin:1.4rem 0 1.1rem}
+.cp-ofx-de{margin:0;font-size:1rem;color:#6b7280}
+.cp-ofx-de s{color:#9ca3af}
+.cp-ofx-preco{margin:.1rem 0 0;font-family:Poppins,sans-serif;font-size:3rem;line-height:1.05;font-weight:800;color:#15803d;letter-spacing:-.02em}
+.cp-ofx-nota{margin:.2rem 0 1.25rem;font-size:.85rem;color:#6b7280}
+.cp-ofx-btn{display:block;width:100%;border:0;cursor:pointer;border-radius:999px;padding:1.1rem 1rem;font-size:1.05rem;font-weight:800;letter-spacing:.03em;color:#fff;background:linear-gradient(180deg,#22c55e,#15803d);box-shadow:0 10px 24px -8px rgb(22 163 74/.7);animation:cp-ofx-pulso 2s ease-in-out infinite}
+.cp-ofx-btn:hover{filter:brightness(1.06)}
+@keyframes cp-ofx-pulso{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.cp-ofx-seg{margin:.85rem 0 0;font-size:.85rem;font-weight:600;color:#4b5563}
+@media (min-width:768px){.cp-ofx{padding:4.5rem 1rem}}
+
+/* Foto do topo (header.webp), tamanho contido */
+.cp-hero-foto{width:100%;max-width:26rem;margin:0 auto 2rem}
+.cp-hero-foto img{display:block;width:100%;height:auto;border-radius:1rem;box-shadow:0 18px 36px -18px rgb(15 23 42/.45)}
+
+/* Hero: título longo + botão acima da foto */
+.cp-hero-h{font-size:1.6rem}
+@media (min-width:768px){.cp-hero-h{font-size:2.6rem}}
+.cp-hero-foto{margin:1.75rem auto .5rem}
+
+/* Problema x Solução (substitui "Para quem é") */
+.cp-ps{max-width:30rem;margin:0 auto;padding:2.5rem 1rem;display:grid;gap:1rem}
+.cp-ps-prob{background:#fff;border:1px solid #e5e7eb;border-radius:1.25rem;box-shadow:0 10px 28px -16px rgb(15 23 42/.2);overflow:hidden}
+.cp-ps-topo{text-align:center;padding:1.5rem 1.25rem 1.1rem;border-bottom:1px solid #e5e7eb}
+.cp-ps-tag{display:inline-block;background:#dc2626;color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .8rem;border-radius:999px;margin-bottom:.7rem}
+.cp-ps-h{margin:0;font-size:1.3rem;line-height:1.3;font-weight:800;color:#111827}
+.cp-ps-list{list-style:none;margin:0;padding:.25rem 1.5rem 1rem}
+.cp-ps-list li{display:flex;align-items:flex-start;gap:.8rem;padding:.9rem 0;font-size:.95rem;line-height:1.5;color:#4b5563;border-bottom:1px solid #f3f4f6}
+.cp-ps-list li:last-child{border-bottom:0}
+.cp-ps-x,.cp-ps-v{flex:none;width:1.6rem;height:1.6rem;border-radius:999px;display:grid;place-items:center;color:#fff;margin-top:.05rem}
+.cp-ps-x{background:#dc2626}
+.cp-ps-x svg,.cp-ps-v svg{width:.85rem;height:.85rem}
+.cp-ps-sol{background:#fff;border:2px solid #16a34a;border-radius:1.25rem;overflow:hidden;box-shadow:0 0 0 5px rgb(22 163 74/.1),0 14px 32px -18px rgb(15 23 42/.3)}
+.cp-ps-sol .cp-ps-topo{background:#f0fdf4;border-bottom-color:#dcfce7}
+.cp-ps-tag-sol{background:linear-gradient(180deg,#22c55e,#15803d)}
+.cp-ps-ouro{color:#16a34a}
+.cp-ps-corpo{padding:1.25rem 1.5rem 1.5rem}
+.cp-ps-txt{margin:0 0 1rem;text-align:center;font-size:.95rem;line-height:1.55;color:#4b5563}
+.cp-ps-list-sol{padding:0}
+.cp-ps-list-sol li{border:0;padding:.45rem 0;color:#111827;font-weight:700}
+.cp-ps-v{background:#16a34a}
+@media (min-width:768px){.cp-ps{padding:4rem 1rem}.cp-ps-h{font-size:1.5rem}}
