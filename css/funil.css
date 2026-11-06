@@ -327,3 +327,10 @@ footer a { color: inherit; text-decoration: underline; text-underline-offset: 3p
 .selos3 .ico { width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; background: var(--verde-claro); color: var(--verde-escuro); margin-bottom: 6px; }
 .selos3 .ico svg { width: 18px; height: 18px; }
 .oferta .pos-txt { font-size: 13px; line-height: 1.5; color: #6b7280; }
+
+/* Tipografia igual a mapa.fluentecomlegenda.com */
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6}
+h1,h2,h3,h4{font-family:Poppins,-apple-system,BlinkMacSystemFont,sans-serif;font-weight:800;line-height:1.2}
+h1{letter-spacing:-.02em}
+.btn,.preco{font-family:Poppins,-apple-system,BlinkMacSystemFont,sans-serif;font-weight:900;letter-spacing:.3px}
+.selo,.pre{font-family:Poppins,sans-serif;font-weight:700;letter-spacing:2px}

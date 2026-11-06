@@ -395,3 +395,26 @@ section.cp-ideal{background:#fff;color:#111827;border:1px solid #e5edf5;box-shad
 .cp-ps-list-sol li{border:0;padding:.45rem 0;color:#111827;font-weight:700}
 .cp-ps-v{background:#16a34a}
 @media (min-width:768px){.cp-ps{padding:4rem 1rem}.cp-ps-h{font-size:1.5rem}}
+
+/* Tipografia igual a mapa.fluentecomlegenda.com: Poppins nos títulos/botões/preços/etiquetas, Inter no texto */
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6}
+h1,h2,h3,h4{font-family:Poppins,-apple-system,BlinkMacSystemFont,sans-serif!important;font-weight:800!important;line-height:1.2!important}
+h1,.cp-hero-h{font-size:clamp(26px,6vw,52px)!important;letter-spacing:-.02em!important}
+h3,h4{font-weight:700!important}
+button,.cp-ofx-btn,.cp-final-btn{font-family:Poppins,-apple-system,BlinkMacSystemFont,sans-serif!important;font-weight:900!important;letter-spacing:.3px!important}
+.cp-ofx-preco{font-family:Poppins,sans-serif!important;font-weight:900!important;letter-spacing:0!important}
+.cp-comp-tag,.cp-fim-tag,.cp-ofx-tag,.cp-pk-tag,.cp-ps-tag,.cp-uso-tag,.cp-pk-kick{font-family:Poppins,sans-serif!important;font-weight:700!important;letter-spacing:2px!important}
+.cp-selo{font-family:Poppins,sans-serif!important;font-weight:600!important}
+
+/* Valor item por item (antes do card de preço) */
+.cp-val{background:#eff6ff;padding:3rem 1rem 0;text-align:center}
+.cp-val-h{font-size:clamp(24px,5vw,38px)!important;color:#111827;margin:0 0 1.25rem}
+.cp-val-card{max-width:24rem;margin:0 auto;background:#fff;border:2px dashed #9ca3af;border-radius:1.25rem;padding:1.25rem 1.25rem 1.1rem;text-align:left}
+.cp-val-label{margin:0 0 .75rem;text-align:center;font-family:Poppins,sans-serif;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6b7280;line-height:1.4}
+.cp-val-list{list-style:none;margin:0;padding:0}
+.cp-val-list li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.6rem 0;border-bottom:1px dashed #e5e7eb;font-size:.92rem;color:#1f2937;line-height:1.35}
+.cp-val-list s{flex:none;color:#9ca3af;font-weight:600}
+.cp-val-total{display:flex;justify-content:space-between;align-items:center;padding-top:.9rem}
+.cp-val-total span{font-family:Poppins,sans-serif;font-size:.8rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#111827}
+.cp-val-total s{font-family:Poppins,sans-serif;font-size:1.6rem;font-weight:900;color:#dc2626;text-decoration-thickness:3px}
+.cp-val+.cp-ofx{padding-top:2.5rem}
